@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+</head>
+<br>
+<body>
+	<form action="results.html" method="GET" enctype="multipart/form-data">
+		<h2>Let us get to know more about you</h2>
+		<div>
+			<input type="hidden" name="hidden" value="Completed Form"> <!-- this words completed form will appear once the form in submitted -->
+		</div>
+	<br>
+		<div>
+			<label for="name">Name</label> <!--you repeat this to ensure the space for the input is highlighted when it is clicked to type in --> 
+			<input type="text" name="name" id="name" placeholder="Full name" required>
+		</div>
+	<br>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="email address" required>
+		</div>
+	<br>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" min="17" max="60" step="1" placeholder="age">
+		</div>
+	<br>
+		<div>
+			<label for="date">Birthday</label>
+			<input type="date" name="date" id="date" min="2000-01-01" max="2025-06-01">
+		</div>
+	<br>
+		<div>
+			Favourite Food <em>(select all that apply)</em> 
+			<div>
+				<label for="Fried rice">Fried rice</label>
+				<input type="checkbox" name="Fried rice" id="Fried rice">
+				<label for="Fried chicken">Fried chicken</label>
+				<input type="checkbox" name="Fried chicken" id="Fried chicken">
+				<label for="Fried vegetables">Fried vegetables</label>
+				<input type="checkbox" name="Fried vegetables" id="Fried vegetables">
+			</div>
+		</div>
+	<br>
+		<div>
+			Gender <em>(choose one)</em>
+			<div>
+				<label for="male">Male</label>
+				<input type="radio" name="gender"id="male" value="male"> <!-- the term radio means only one input can be selected, not more than one -->
+			</div>
+			<div>
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="female" value="female"> <!-- when it comes to more than 2 options, the term radio may not be useful -->
+			</div>
+		</div>
+	<br>
+		<div>
+			<label for="eye colour">Eye Colour</label>
+			<select name="eye colour" id="eye colour" multiple>
+				<option label="Green" value="Green">Green</option>
+				<option label="Brown" value="Brown">Brown</option>
+				<option label="Blue" value="Blue">Blue</option>
+			</select> <!-- the term multiple means more than one option can be selected -->
+		</div>
+	<br>
+		<div>
+			<label for="Contact">Contact</label>
+			<textarea id="Contact" name="Contact"placeholder="Write me a message here"></textarea>
+		</div>
+	<br>
+		<div>
+			<label for="file">File</label>
+			<input id="file" type="file" name="file">
+		</div>
+	<br>
+		<div>
+			<label for="phone">Phone</label>
+			<input type="tel" name="phone" id="phone"> <!--using the phone term instead of the number term means that when people want to key in, it shows a keypad -->
+		</div>
+	<br>
+		<div>
+			<label for="url">Linkedin Profile</label>
+			<input type="url" name="url" id="url"> <!-- the term url allows the person to use a special keypad to type url -->
+		</div>
+	<br>
+		<div>
+			<label for="color">Colour</label>
+			<input type="color" name="color" id="color"> <!-- you can actually choose many colours from the palette if you use the term color, American style -->
+		</div>
+	<br>
+		<div>
+			<label>
+				Password
+				<input type="password" name="password" placeholder="password" required> <!-- you put the input type as password and when you type it will hide the details and show you bullets instead -->
+			</label>
+		</div>
+	<br>
+		<div>
+			<button type="reset">Reset</button> <!-- resets the input -->
+			<button type="submit">Submit</button> <!--submits the inputs, but the problem is, it does not go to the next page -->
+		</div>
+	</form>
+</body>
+</html>
